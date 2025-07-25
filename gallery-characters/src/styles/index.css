@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 :root {
   margin: 0;
@@ -123,4 +124,5 @@
     @apply bg-background text-foreground;
   }
 }
+
 

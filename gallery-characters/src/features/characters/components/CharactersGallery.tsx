@@ -21,7 +21,7 @@ function CharactersGallery() {
   if (!characters || characters.length === 0) return <div>No se encontraron personajes.</div>;
   return (
     <>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mr-8 ml-8 ">
       {characters.map(character => {
         return (
           <CharacterModal

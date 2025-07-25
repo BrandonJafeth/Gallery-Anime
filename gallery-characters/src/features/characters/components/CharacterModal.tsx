@@ -65,7 +65,7 @@ function CharacterModal({ character }: Props) {
           </div>
         )}
         {data && (
-       <div className="mt-4 px-4 pb-4 max-h-[20vh] overflow-y-auto flex-shrink">
+       <div className="mt-4 px-4 pb-4 max-h-[20vh] overflow-y-auto flex-shrink ">
             <ExpandableText
               text={data.about}
               className="text-xs text-muted-foreground"

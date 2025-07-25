@@ -1,18 +1,16 @@
-import './App.css'
-import CharactersGallery from './features/characters/components/CharactersGallery'
-import Navbar from './components/ui/Navbar'
-
-
+import Footer from './components/ui/Footer';
+import Navbar from './components/ui/Navbar';
+import CharactersPage from './pages/CharactersPage';
+import './styles/App.css'
 
 
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="mt-8">
-        <CharactersGallery />
-      </div>
+    <Navbar />
+  <CharactersPage />
+    <Footer />
     </>
   );
 }
