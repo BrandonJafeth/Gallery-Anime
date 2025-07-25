@@ -10,7 +10,7 @@ type CharacterCardProps = {
 function CharacterCard({ character, onClick }: CharacterCardProps) {
   return (
     <Card
-      className="w-full cursor-pointer transition-transform hover:scale-105 h-72 flex flex-col justify-start"
+      className="w-auto cursor-pointer transition-transform hover:scale-105 h-72 flex flex-col justify-start"
       onClick={() => onClick?.(character)}
     >
       <CardHeader className="flex flex-col items-center gap-2 p-2">

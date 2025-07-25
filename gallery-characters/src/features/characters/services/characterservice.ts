@@ -9,7 +9,8 @@ const response = await jikanapi.get<{ data: Character[] }>("/characters", {
     q: params.q || '',
     order_by: params.order_by || 'mal_id',
     sort: params.sort || 'asc',
-    anime: params.anime || ''
+    anime: params.anime || '',
+    limit: params.limit || 25
   }
 });
 return response.data.data;
