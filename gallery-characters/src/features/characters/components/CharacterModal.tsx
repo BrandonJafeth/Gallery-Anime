@@ -4,14 +4,7 @@ import CharacterCard from "./CharacterCard";
 import type { Anime } from "@/features/anime/types/anime";
 import { useCharacterFull } from "../hooks/useCharacterFull";
 import ExpandableText from "@/components/ui/ExpandableText";
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from '@/components/animate-ui/radix/dialog';
+import { Dialog, DialogTrigger, DialogContent, DialogHeader,DialogTitle,DialogDescription} from '@/components/animate-ui/radix/dialog';
 
 type Props = {
   character: Character;

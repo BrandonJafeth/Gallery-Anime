@@ -1,19 +1,13 @@
 import jikanapi from "@/api/api";
 import type { GetCharactersParams } from "@/features/filters/types/jikan";
 import type { Character } from "../types/character";
+import type { ApiResponse } from "@/types/pagination";
 
-async function getCharacters (params: GetCharactersParams = {}){
-const response = await jikanapi.get<{ data: Character[] }>("/characters", {
-  params :{
-    page: params.page || 2,
-    q: params.q || '',
-    order_by: params.order_by || 'mal_id',
-    sort: params.sort || 'asc',
-    anime: params.anime || '',
-    limit: params.limit || 25
-  }
-});
-return response.data.data;
+async function getCharacters(params: GetCharactersParams): Promise<ApiResponse<Character>> {
+    const response = await jikanapi.get('/characters', {
+        params
+    });
+    return response.data;
 }
 
 async function getCharacterFull(id: number): Promise<Character> {
